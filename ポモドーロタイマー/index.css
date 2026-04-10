@@ -48,9 +48,4 @@ body {
   transition: background-color 0.3s; /* ホバー時の色の変化をスムーズにする */
 }
 .timer-button:hover {  background-color: #1976d2; /* ホバー時の色 */
-}:root {
-  --primary-color: #4caf50; /* 緑色 */
-  --secondary-color: #2196f3; /* 青色 */
-  --background-color: #f0f0f0; /* パステルカラーの背景 */
-  --text-color: #333; /* テキストの色 */
 }
