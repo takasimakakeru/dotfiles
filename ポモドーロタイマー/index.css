@@ -1,0 +1,56 @@
+/* デザイン言語はリキッドグラスで作っていく
+   参考：https://www.figma.com/design/1n9sH8mLh7Xo2l3a5qj8e/Liquid-Glass?node-id=0-1&t=Zt6n9vK7iQGgkVh-4
+*/
+/* 全体的にパステルカラーを基調として可愛らしい印象を与えるモードと白黒を基調としたスタイリッシュのモードの2つを用意しておく
+*/
+/* レスポンシブ対応でモバイルファーストで設計していく
+*/
+/* タイマーは画面の中央に円がありその中に残り時間が表示される。丸の下にはスタート(スタートしたらストップになる)とリセットの2つのボタンを用意する。
+   タイマーの円は時間の経過とともに色が変わるようにする。例えば、最初は緑色で、時間が半分になると黄色、残り時間が少なくなると赤色になるなど。
+*/
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0; /* パステルカラーの背景 */
+  color: #333; /* テキストの色 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.timer-circle {  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #4caf50; /* 初期は緑色 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 20px;
+  transition: background-color 0.5s; /* 色の変化をスムーズにする */
+}
+.timer-buttons {  display: flex;
+  gap: 10px;
+}
+.timer-button {  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #2196f3; /* ボタンの色 */
+  color: #fff;
+  transition: background-color 0.3s; /* ホバー時の色の変化をスムーズにする */
+}
+.timer-button:hover {  background-color: #1976d2; /* ホバー時の色 */
+}:root {
+  --primary-color: #4caf50; /* 緑色 */
+  --secondary-color: #2196f3; /* 青色 */
+  --background-color: #f0f0f0; /* パステルカラーの背景 */
+  --text-color: #333; /* テキストの色 */
+}
