@@ -13,14 +13,19 @@
     <header>
 	<h1>ポモドーロタイマー</h1>
     </header>
-    <main>
-	<section class="timer">
-	    <div class="time-display">25:00</div>
-	    <button id="start-btn">スタート</button>
-	    <button id="stop-btn">ストップ</button>
-	    <button id="reset-btn">リセット</button>
-	</section>
-    </main>
-    <script src="script.js"></script>
+<main>
+    <section class="timer-container">
+        <div class="timer-circle">
+            <div class="time-display">25:00</div>
+        </div>
+        
+        <div class="timer-buttons">
+            <button id="start-btn" class="timer-button">スタート</button>
+            <button id="stop-btn" class="timer-button">ストップ</button>
+            <button id="reset-btn" class="timer-button">リセット</button>
+        </div>
+    </section>
+</main>
+    <script src="index.js"></script>
 </body>
 </html>
