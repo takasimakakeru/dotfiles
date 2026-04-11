@@ -1,31 +1,29 @@
-<!-- ポモドーロタイマーを作っていく-->
-<!--モバイルファーストで開発-->
+<!-- ポモドーロタイマーのHTMLを作ってください。以下のルールを絶対に守ってください。
+​全体を section タグで囲み、クラス名は timer-container にすること。
+​中央に時間を表示する円として div タグを作り、クラス名を timer-circle にすること。
+​その円の中に、残り時間を表示する div（クラス名 time-display）を入れ、中身を 25:00 とすること。
+​ボタンをまとめる div（クラス名 timer-buttons）を円の下に作ること。
+​ボタンは3つ。IDをそれぞれ start-btn, stop-btn, reset-btn とし、共通のクラス名 timer-button をつけること。
+css,jsは別ファイルに記述します -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ポモドーロタイマー</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<!--拡張性の高いタグなどで記述-->
-    <header>
-	<h1>ポモドーロタイマー</h1>
-    </header>
-<main>
     <section class="timer-container">
-        <div class="timer-circle">
-            <div class="time-display">25:00</div>
-        </div>
-        
-        <div class="timer-buttons">
-            <button id="start-btn" class="timer-button">スタート</button>
-            <button id="stop-btn" class="timer-button">ストップ</button>
-            <button id="reset-btn" class="timer-button">リセット</button>
-        </div>
+	<div class="timer-circle">
+	    <div class="time-display">25:00</div>
+	</div>
+	<div class="timer-buttons">
+	    <button id="start-btn" class="timer-button">スタート</button>
+	    <button id="stop-btn" class="timer-button">ストップ</button>
+	    <button id="reset-btn" class="timer-button">リセット</button>
+	</div>
     </section>
-</main>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
