@@ -16,35 +16,37 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #f0e6f7; /* パステルカラーの背景 */
 }
-
+/* 現状右上から時計とか横並びのボタン3つという状態になっているのでレイアウトや見た目の修整をするために追記または描き直しを命じます */
 .timer-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 100vh; /* ビューポートの高さを100%に設定 */
 }
 .timer-circle {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-color: #90ee90; /* 初期の色は緑 */
+  background-color: #4caf50; /* タイマーの円の色 */
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   font-size: 2em;
-  color: #fff;
+  color: white;
   margin-bottom: 20px;
+  transition: background-color 0.5s; /* 色の変化をスムーズにするためのトランジション */
 }
-.timer-buttons {  display: flex;
-  gap: 10px;
-}
-.timer-button {  padding: 10px 20px;
+.timer-button {
+  padding: 10px 20px;
+  margin: 5px;
   font-size: 1em;
+  color: white;
+  background-color: #2196f3; /* ボタンの色 */
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #2196f3; /* ボタンの色 */
-  color: #fff;
-  transition: background-color 0.3s; /* ホバー時の色の変化をスムーズにする */
+  transition: background-color 0.3s; /* ホバー時の色の変化をスムーズにするためのトランジション */
 }
 .timer-button:hover {  background-color: #1976d2; /* ホバー時の色 */
 }
