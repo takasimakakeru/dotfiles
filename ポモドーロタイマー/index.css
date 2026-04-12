@@ -8,18 +8,13 @@
 /* タイマーは画面の中央に円がありその中に残り時間が表示される。丸の下にはスタート(スタートしたらストップになる)とリセットの2つのボタンを用意する。
    タイマーの円は時間の経過とともに色が変わるようにする。例えば、最初は緑色で、時間が半分になると黄色、残り時間が少なくなると赤色になるなど。
 */
-/* 背景がただの白だからもう一度描き直しを指示します。背景はパステルカラーのグラデーションにして、より可愛らしい印象を与えるようにしてください。
-   例えば、上から下に向かって淡いピンクから淡いブルーへのグラデーションなどが考えられます。
+/* 背景がただの白だからもう一度描き直しを指示します。背景はパステルカラーでお願いします
 */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(to bottom, #ffb6c1, #add8e6); /* 上から下へのグラデーション */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* ビューポートの高さを100%にする */
+  background-color: #f0e6f7; /* パステルカラーの背景 */
 }
 
 .timer-container {
@@ -27,17 +22,17 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.timer-circle {  width: 200px;
+.timer-circle {
+  width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-color: #4caf50; /* 初期は緑色 */
+  background-color: #90ee90; /* 初期の色は緑 */
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2em;
   color: #fff;
   margin-bottom: 20px;
-  transition: background-color 0.5s; /* 色の変化をスムーズにする */
 }
 .timer-buttons {  display: flex;
   gap: 10px;
