@@ -33,14 +33,14 @@ require("lazy").setup({
   "windwp/nvim-ts-autotag",
 
   -- Telescope を 0.1.8 に固定（0.9.5対応）
-  { "nvim-telescope/telescope.nvim", tag = "0.1.8", dependencies = { "nvim-lua/plenary.nvim" } },
+ -- { "nvim-telescope/telescope.nvim", tag = "0.1.8", dependencies = { "nvim-lua/plenary.nvim" } },
   
-  { "nvim-tree/nvim-tree.lua", dependencies = "nvim-tree/nvim-web-devicons" },
+ -- { "nvim-tree/nvim-tree.lua", dependencies = "nvim-tree/nvim-web-devicons" },
 
   -- LSP関連も固定
-  { "neovim/nvim-lspconfig", tag = "v0.1.8" },
-  { "williamboman/mason.nvim" },
-  { "williamboman/mason-lspconfig.nvim", version = "1.3.0" },
+ -- { "neovim/nvim-lspconfig", tag = "v0.1.8" },
+--  { "williamboman/mason.nvim" },
+ -- { "williamboman/mason-lspconfig.nvim", version = "1.3.0" },
   
   "hrsh7th/nvim-cmp",
   "hrsh7th/cmp-nvim-lsp",
