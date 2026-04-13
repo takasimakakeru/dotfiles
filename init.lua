@@ -54,7 +54,10 @@ require("lazy").setup({
 vim.cmd("colorscheme tokyonight")
 
 -- --- nvim-autopairs ---
-require("nvim-autopairs").setup {}
+require("nvim-autopairs").setup({
+  disable_filetype = { "TelescopePrompt" },
+  check_ts = true, -- Treesitterを使って賢く閉じる
+})
 
 -- --- Telescope (ファイル検索) ---
 local builtin = require('telescope.builtin')
