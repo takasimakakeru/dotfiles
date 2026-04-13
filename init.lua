@@ -34,10 +34,9 @@ require("lazy").setup({
   { "nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
   { "nvim-tree/nvim-tree.lua", dependencies = "nvim-tree/nvim-web-devicons" },
 
-  -- LSP関連
-  "neovim/nvim-lspconfig",
-  "williamboman/mason.nvim",
-  "williamboman/mason-lspconfig.nvim",
+  { "neovim/nvim-lspconfig", tag = "v0.1.8" },
+  { "williamboman/mason.nvim" },
+  { "williamboman/mason-lspconfig.nvim", version = "1.3.0" },
   "hrsh7th/nvim-cmp",
   "hrsh7th/cmp-nvim-lsp",
 })
@@ -92,7 +91,7 @@ require("nvim-tree").setup({
 })
 -- キーバインド設定
 vim.keymap.set('n', '<C-b>', ':NvimTreeToggle<CR>', { silent = true })
-vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>', { silent = true })
+vim.keymap.set('n', '<leader>', ':NvimTreeToggle<CR>', { silent = true })
 
 -- --- LSP / Mason 設定 ---
 require("mason").setup()
